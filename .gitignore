@@ -1,0 +1,5 @@
+# ignore all .db files
+*.db
+
+# ignore all .csv files
+*.csv
