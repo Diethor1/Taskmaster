@@ -5,4 +5,4 @@
 *.csv
 
 #ignore venv
-.venv
+venv
