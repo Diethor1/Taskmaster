@@ -1,11 +1,14 @@
 # ignore all .db files
-*.db
+# -->Put .db files here that should be ignored.
 
 # ignore all .csv files
-*.csv
+# -->put .csv files here that Git should ignore
 
 #ignore venv
 venv
 
 # ignore settings.py (instellingenbestand
 settings.py
+
+# ignore tasks
+tasks.db
