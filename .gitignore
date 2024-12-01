@@ -7,3 +7,5 @@
 #ignore venv
 venv
 
+# ignore settings.py (instellingenbestand
+settings.py
