@@ -1,3 +1,4 @@
+import os
 import csv
 import sqlite3
 import random 
@@ -9,7 +10,17 @@ import openpyxl # 3.1.5
 
 #Dit is een takenverdelerdie willekeurig taken verdeeld genaamd Random Taskmaster. Zie bijgevoegd document voor meer informatie
 # Verbinding maken met de database
-conn = sqlite3.connect('ratama.db')
+
+# Basisfolder waar dit script zich bevindt
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Pad naar 'data_files' waar de .csv files zijn
+CSV_DIR = os.path.join(BASE_DIR, 'data_files')
+
+# Pad waar de databank is
+DB_PATH = os.path.join(BASE_DIR, 'ratama.db')
+
+conn = sqlite3.connect(DB_PATH)
 c = conn.cursor()
 
 
@@ -30,7 +41,8 @@ except OSError as e:
 conn.commit()
 
 # We openen het cvs-bestand teamleden.csv en lezen de gegevens in
-with open('teamleden.csv', 'r') as tl_file:
+teamleden_csv_path = os.path.join(CSV_DIR, 'teamleden.csv')
+with open(teamleden_csv_path, 'r') as tl_file:
 	reader = csv.reader(tl_file)
 	# We slaan de header over, want die die bevat de kolomnamen
 	next(reader)
@@ -42,7 +54,8 @@ with open('teamleden.csv', 'r') as tl_file:
 
 
 # We openen het cvs-bestand taken.csv en lezen de gegevens in
-with open('taken.csv', 'r') as taak_file:
+taken_csv_path = os.path.join(CSV_DIR, 'taken.csv')
+with open(taken_csv_path, 'r') as taak_file:
 	reader = csv.reader(taak_file)
 	next(reader)
 	for row in reader:
@@ -51,7 +64,8 @@ with open('taken.csv', 'r') as taak_file:
 			VALUES (? ,? ,? ,? ,? ,? ,?) ''', row)
 
 # We openen het cvs-bestand urgentie.csv en lezen de gegevens in
-with open('urgentie.csv', 'r') as urg_file:
+urgentie_csv_path = os.path.join(CSV_DIR, 'urgentie.csv')
+with open(urgentie_csv_path , 'r') as urg_file:
 	reader = csv.reader(urg_file)
 	next(reader)
 	for row in reader:
