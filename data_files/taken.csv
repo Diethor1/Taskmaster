@@ -1,0 +1,8 @@
+Taak_id,Datum,Open_door,Afdeling,Omschrijving,Status,Urgentie_grd
+1,04/11/2024,Johan,IT,Toegangsrecht vrijgeven,open,3
+2,04/11/2024,Peter,Managment,Profielen testen,open,2
+3,05/11/2024,Johan,IT,Software update uitvoeren,open,1
+4,07/11/2024,Iris,Sales,Statistieken controleren,open,3
+5,06/11/2024,Sandra,HR,Adreswijzigingen doorvoeren,geannuleerd,4
+6,02/11/2024,Peter,Managment,KPIs controleren,open,2
+7,31/10/2024,Iris,Sales,Campagnemail versturen,open,3
