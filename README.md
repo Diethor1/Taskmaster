@@ -20,7 +20,7 @@
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Diethor1/Taskmaster.git
-   cd randomaster
+   cd Taskmaster
 2. Install Dependencies: Ensure Python 3.x is installed along with the required libraries:
 ```bash
 pip install -r requirements.txt
@@ -37,7 +37,7 @@ urgentie.csv: Contains urgency level data.
 ## Run the Program: Execute the script:
 
 ```bash
-pythonTaskmaster.py
+python Taskmaster.py
 ```
 ##Usage Taskaster
 
@@ -62,6 +62,7 @@ Graad	Urgentie	Tijdlimiet
 
 When prompted, answer questions about task progress to log updates.
 View task assignments and deadlines directly from the terminal.
+After task assignment, you can download the task list.
 
 ## Project Structure
 
@@ -69,7 +70,7 @@ View task assignments and deadlines directly from the terminal.
 - teamleden.csv: CSV file containing team member information.
 - taken.csv: CSV file containing task information.
 - urgentie.csv: CSV file defining urgency levels and time limits.
-- random_taskmaster.py: Python script for managing and assigning tasks.
+- Taskmaster.py: Python script for managing and assigning tasks.
   
 ## How It Works
 
@@ -103,16 +104,12 @@ De taak werd aangenomen op 2024-11-18.
 De deadline is op 2024-11-19.
 Ben je al begonnen met de taak? ja/nee
 ```
+##Output
 
-## Customization
-
-You can modify:
-
-The database structure to suit your organization's requirements.
-The task allocation logic for fairness or prioritization.
+After the tasks have been assigned you get asked if you want to save the file as an xls. If yes, you are asked to give it a name before saving.
 
 ## License
 
 This project is licensed under the MIT License.
 
-# Taskmaster
+
