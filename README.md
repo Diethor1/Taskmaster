@@ -1,6 +1,6 @@
-# RandoMaster
+# TaskMaster
 
-#RandoMaster is a task allocation tool designed to randomly assign tasks to team members, ensuring an even distribution and consideration of urgency levels. This project utilizes a SQLite database for storing task and team data and provides functionality for monitoring task progress.
+#TaskMaster is a task allocation tool designed to randomly assign tasks to team members, ensuring an even distribution and consideration of urgency levels. This project utilizes a SQLite database for storing task and team data and provides functionality for monitoring task progress.
 
 ---
 
@@ -19,11 +19,11 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Diethor1/RandoMaster.git
+   git clone https://github.com/Diethor1/Taskmaster.git
    cd randomaster
 2. Install Dependencies: Ensure Python 3.x is installed along with the required libraries:
 ```bash
-pip install pandas
+pip install -r requirements.txt
 ```
 
 ## Prepare Input Files: 
@@ -37,9 +37,9 @@ urgentie.csv: Contains urgency level data.
 ## Run the Program: Execute the script:
 
 ```bash
-python RandoMaster.py
+pythonTaskmaster.py
 ```
-##Usage RandoMaster
+##Usage Taskaster
 
 CSV File Format
 ```bash
