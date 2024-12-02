@@ -28,11 +28,14 @@ pip install -r requirements.txt
 
 ## Prepare Input Files: 
 
-Place the following CSV files in the project directory:
+The following CSV files with example data are in the project directory:
 
 teamleden.csv: Contains team member data.
 taken.csv: Contains task data.
 urgentie.csv: Contains urgency level data.
+
+## Settings.py
+The settingsfile contains instructions on how to add your own data to start appointing tasks randomly.
 
 ## Run the Program: Execute the script:
 
